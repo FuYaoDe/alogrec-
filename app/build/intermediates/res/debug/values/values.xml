@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/dan/AndroidStudioProjects/alogrec/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">aLogrec</string>
+    <string name="cancel">Cancel</string>
+    <string name="ext_message">Could not access log directory. Is your external storage (SD card) mounted?</string>
+    <string name="fail_message">Failed to create log file at:</string>
+    <string name="record">Record</string>
+    <string name="start_message">Log will be recorded into:</string>
+    <string name="stop">Stop</string>
+    <string name="stop_message">Log being recored into:</string>
+</resources>

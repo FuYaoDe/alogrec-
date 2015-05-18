@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ext_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/info_text"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/fail_message" />
+
+    <TextView
+        android:id="@+id/file_text"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp" >
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>
