@@ -27,6 +27,14 @@ public class StartActivity extends Activity {
 		setContentView(R.layout.start);
 		logFilePref = new LogFilePref(this);
 
+//		String command = "pm grant org.jtb.alogrec.donate android.permission.READ_LOGS";
+//		Process p = null;
+//		try {
+//			p = Runtime.getRuntime().exec(command);
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+
 		startButton = (Button) this.findViewById(R.id.start_button);
 		startButton.setOnClickListener(new OnClickListener() {
 
