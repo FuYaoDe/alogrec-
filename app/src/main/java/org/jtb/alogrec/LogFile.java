@@ -9,14 +9,14 @@ import java.util.Date;
 
 class LogFile {
 	private static final SimpleDateFormat LOG_FILE_FORMAT = new SimpleDateFormat(
-			"yyyy-MM-dd-HH-mm-ss");
+			"MMddHHmm_ss");
 	public static final File DIR = new File(Environment.getExternalStorageDirectory(),
 			"alogrec");
 
 	private File file;
 
 	LogFile() {
-		file = new File(DIR, "alogrec." + LOG_FILE_FORMAT.format(new Date())
+		file = new File(DIR, "alogrec_" + LOG_FILE_FORMAT.format(new Date())
 				+ ".log");
 	}
 

@@ -22,7 +22,9 @@ public final class R {
         public static final int log_file_text=0x7f050006;
         public static final int start_button=0x7f050007;
         public static final int start_layout=0x7f050005;
-        public static final int stop_button=0x7f050008;
+        public static final int stopKeyWord=0x7f050009;
+        public static final int stop_button=0x7f05000a;
+        public static final int textView2=0x7f050008;
     }
     public static final class layout {
         public static final int ext=0x7f030000;

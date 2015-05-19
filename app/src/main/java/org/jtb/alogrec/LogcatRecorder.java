@@ -54,13 +54,17 @@ public class LogcatRecorder implements Runnable {
 				writer.write(line);
 				writer.write("\n");
 //				Log.d("file size:",""+logFile.length());
-				if(logFile.length()>=500000){
+
+				long fileSize = 1024*1024*200;   //100MB一個檔案
+				long maxSize = 1024*1024*1024*2;   //上限 2G
+
+				if(logFile.length() >= fileSize) {
 
 					Log.d("dir size",folderSize(LogFile.DIR)+"");
 					Log.d("file size","Save:"+logFile.length());
 					Log.d("file time","time:"+logFile.lastModified());
 
-					if(folderSize(LogFile.DIR)>1500000){
+					if(folderSize(LogFile.DIR)>maxSize){
 						overSize(LogFile.DIR);
 					}
 
